@@ -2,14 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/index.js",
+      "src": "jarurat_care_backend/index.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "jarurat_care_frontend/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "/jarurat_care_backend/index.js"
+    },
+    {
       "src": "/(.*)",
-      "dest": "src/index.js"
+      "dest": "/jarurat_care_frontend/index.html"
     }
   ]
 }
