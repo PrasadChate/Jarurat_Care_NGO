@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backend API Testing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Backend API Testing</h1>
+      <div class="form">
+        <h2>Register</h2>
+        <input type="text" id="registerName" placeholder="Name" />
+        <input type="email" id="registerEmail" placeholder="Email" />
+        <input type="password" id="registerPassword" placeholder="Password" />
+        <select id="registerRole">
+          <option value="user">User</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button onclick="registerUser()">Register</button>
+      </div>
+      <div class="form">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" />
+        <input type="password" id="loginPassword" placeholder="Password" />
+        <button onclick="loginUser()">Login</button>
+      </div>
+      <div class="form">
+        <h2>Get All Users (Admin Only)</h2>
+        <button onclick="getAllUsers()">Get Users</button>
+      </div>
+      <pre id="response"></pre>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
