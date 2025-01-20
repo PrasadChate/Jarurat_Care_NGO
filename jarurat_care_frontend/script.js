@@ -1,4 +1,4 @@
-const API_URL = "https://vercel.com/prasadchates-projects/jarurat-care-ngo/CKeuB2NXVbKutBkJmRteZXUznuDq";
+const API_URL = "https://jarurat-care-ngo-rose.vercel.app/";
 
 // Register a user
 async function registerUser() {
