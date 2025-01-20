@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api"; // Update this if deployed
+const API_URL = "https://vercel.com/prasadchates-projects/jarurat-care-ngo/CKeuB2NXVbKutBkJmRteZXUznuDq";
 
 // Register a user
 async function registerUser() {
